@@ -1,0 +1,39 @@
+{
+    "name": "relaywarden/php-sdk",
+    "description": "Official PHP SDK for RelayWarden API",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/relaywarden/relaywarden-php-sdk",
+    "support": {
+        "issues": "https://github.com/relaywarden/relaywarden-php-sdk/issues",
+        "source": "https://github.com/relaywarden/relaywarden-php-sdk"
+    },
+    "require": {
+        "php": "^8.3",
+        "guzzlehttp/guzzle": "^7.10"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0",
+        "phpstan/phpstan": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "RelayWarden\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RelayWarden\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-html coverage",
+        "analyse": "phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
